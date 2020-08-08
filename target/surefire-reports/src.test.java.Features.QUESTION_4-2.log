@@ -1,0 +1,37 @@
+02:09:23.087 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+02:09:23.098 request:
+1 > PUT https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 49
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_241)
+{"name":"semih","job":"zion resident","id":"xxx"}
+
+02:09:23.445 response time in milliseconds: 346.05
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5bfce79ccf64e66c-LHR
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 08 Aug 2020 23:09:23 GMT
+1 < Etag: W/"58-yhNycOBgeIBup25OU9NUtOMs0HY"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d6066090740e15b1d956996a9cc1ac0ed1596928163; expires=Mon, 07-Sep-20 23:09:23 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0471ef15f90000e66c8b8b8200000001
+{"name":"semih","job":"zion resident","id":"xxx","updatedAt":"2020-08-08T23:09:23.353Z"}
+
+02:09:23.448 [print] {
+  "name": "semih",
+  "job": "zion resident",
+  "id": "xxx",
+  "updatedAt": "2020-08-08T23:09:23.353Z"
+}
+
