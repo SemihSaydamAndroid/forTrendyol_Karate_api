@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1adc3808-909e-43bf-9edc-e00fb99b5590" name="Default Changelist" comment="" />
+    <list default="true" id="1adc3808-909e-43bf-9edc-e00fb99b5590" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/QUESTION_1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/QUESTION_1.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/QUESTION_2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/QUESTION_2.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/QUESTION_3.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/QUESTION_3.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/QUESTION_4.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/QUESTION_4.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/QUESTION_5.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/QUESTION_5.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/QUESTION_6.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/QUESTION_6.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/trendyol/testRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/trendyol/testRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.Features.QUESTION_1-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/src.test.java.Features.QUESTION_1-1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.Features.QUESTION_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/src.test.java.Features.QUESTION_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/API_Karate.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/trendyol/testRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/trendyol/testRunner.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +30,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -28,6 +44,7 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1fpjYKmiBxSsviDgsZKbxKGEXFh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -49,7 +66,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/Features" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.testRunner">
+  <component name="RunManager" selected="Cucumber java.Feature: QUESTION_1">
     <configuration name="Feature: Ekstra_Yapılanlar" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/Ekstra_Yapılanlar.feature" />
@@ -68,14 +85,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: QUESTION_5" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: QUESTION_1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/QUESTION_5.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/QUESTION_1.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="API_Karate" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: QUESTION_5" />
+      <option name="SUGGESTED_NAME" value="Feature: QUESTION_1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -139,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: QUESTION_1" />
         <item itemvalue="JUnit.testRunner" />
         <item itemvalue="Cucumber java.Feature: Ekstra_Yapılanlar" />
         <item itemvalue="Cucumber java.Feature: QUESTION_6" />
         <item itemvalue="Cucumber java.Feature: deneme" />
-        <item itemvalue="Cucumber java.Feature: QUESTION_5" />
       </list>
     </recent_temporary>
   </component>
@@ -173,26 +190,26 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="601" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1680.1050@0.0.1680.1050" timestamp="1596923593348" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1596928159048">
+    <state width="1638" height="358" key="GridCell.Tab.0.bottom" timestamp="1597328411717">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1596928159048" />
-    <state width="1638" height="487" key="GridCell.Tab.0.bottom/0.23.1680.974@0.23.1680.974" timestamp="1596923687846" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1596928159043">
+    <state width="1638" height="358" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1597328411717" />
+    <state width="1638" height="358" key="GridCell.Tab.0.bottom/0.23.1680.974@0.23.1680.974" timestamp="1597328295095" />
+    <state width="1638" height="358" key="GridCell.Tab.0.center" timestamp="1597328411716">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1596928159043" />
-    <state width="1638" height="487" key="GridCell.Tab.0.center/0.23.1680.974@0.23.1680.974" timestamp="1596923687843" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1596928159041">
+    <state width="1638" height="358" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1597328411716" />
+    <state width="1638" height="358" key="GridCell.Tab.0.center/0.23.1680.974@0.23.1680.974" timestamp="1597328295094" />
+    <state width="1638" height="358" key="GridCell.Tab.0.left" timestamp="1597328411715">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1596928159041" />
-    <state width="1638" height="487" key="GridCell.Tab.0.left/0.23.1680.974@0.23.1680.974" timestamp="1596923687842" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1596928159044">
+    <state width="1638" height="358" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1597328411715" />
+    <state width="1638" height="358" key="GridCell.Tab.0.left/0.23.1680.974@0.23.1680.974" timestamp="1597328295088" />
+    <state width="1638" height="358" key="GridCell.Tab.0.right" timestamp="1597328411716">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1596928159044" />
-    <state width="1638" height="487" key="GridCell.Tab.0.right/0.23.1680.974@0.23.1680.974" timestamp="1596923687845" />
+    <state width="1638" height="358" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1597328411716" />
+    <state width="1638" height="358" key="GridCell.Tab.0.right/0.23.1680.974@0.23.1680.974" timestamp="1597328295095" />
     <state x="328" y="106" key="SettingsEditor" timestamp="1596923342665">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

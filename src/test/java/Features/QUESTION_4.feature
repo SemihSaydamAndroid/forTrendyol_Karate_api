@@ -1,16 +1,9 @@
+ Feature: QUESTION-4
 
-  Feature: QUESTION-4
-    Scenario: QUESTION-4 ID:2 olanı çağırabiliyoruz.
-      Given url 'https://reqres.in/api/users/2'
-      * def Myrequest = read('userForQuestion2.json')
-      * set Myrequest.name = 'semih'
-      Given request Myrequest
-      When method put
-      Then status 200
-      Then print response
+   ## 4. Verify that the id field is read−only.
+   ##    • You shouldn't be able to send it in the PUT request to /api/books/.
 
-    Scenario:  QUESTION-4 soruda istenilen gibi id: xxx verilerek test edilir
-      # Bu kısım kullandığım API'den dolayı hata vermedi. id kısmını read-only yapmadıklarından olabilir. ID de setleyebildim ve response'a yansıdı bu alan
+    Scenario:  QUESTION-4
 
       Given url 'https://reqres.in/api/users/2'
       * def Myrequest2 = read('userForQuestion2.json')
@@ -20,4 +13,6 @@
       When method put
       Then status 200
       Then print response
+
+      ## this API allow for change id
 

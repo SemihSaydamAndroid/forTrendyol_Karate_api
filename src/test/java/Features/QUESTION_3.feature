@@ -1,15 +1,23 @@
 Feature: QUESTION-3
 
-  Scenario: QUESTION 3 - required alanların boş gönderilmesi sonucu hata alınması
-    Given url 'https://reqres.in/api/users/2'
-    * def Myrequest2 = read('userForQuestion2.json')
-    * set Myrequest2.name = ''
-    * set Myrequest2.job = ''
-    Given request Myrequest
+  #  3. Verify that title and author cannot be empty.
+  #    • PUT on /api/books/ should return an error Field '<field_name>' cannot be empty.
+
+  Scenario: QUESTİON 3 ---- Verify that title and author are required fields cannot be empty.
+    Given url 'https://..../api/books/'
+    And request
+    """
+    {
+    "id" : 2,
+    "author" : "",
+    "title" : ""
+    }
+    """
     When method put
-    Then status 200
+    ##http404
+    Then status 404
     Then print response
-
-
-
-
+    And match response
+    """
+    {"error": "Field 'author' and 'title' is cannot be empty."}
+    """

@@ -9,5 +9,9 @@ import org.junit.runner.RunWith;
 
 //Bu kısımda feautes= yaptığımız gibi tags= yapılır ve istenilen tag'ler çağrılabilir.
 //Böylece istediğimiz ölçütte testlerimizi gruplayabiliriz.
+
+/**
+ * @author Semih Saydam
+ * */
 public class testRunner {
 }

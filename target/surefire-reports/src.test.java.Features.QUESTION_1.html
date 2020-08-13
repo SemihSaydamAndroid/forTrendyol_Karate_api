@@ -168,41 +168,42 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">QUESTION 1 ---- HTTP 404</span>
+<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">QUESTION 1 ---- HTTP</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given url 'https://reqres.in/api/'</div>
-<div class="time-cell passed">0.005321</div>
+<div class="time-cell passed">0.002344</div>
 </div>
-<div class="preformatted">02:09:26.881 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">17:18:49.894 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
 <div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.319325</div>
+<div class="time-cell passed">1.293393</div>
 </div>
-<div class="preformatted">02:09:26.888 request:
+<div class="preformatted">17:18:50.292 request:
 1 &gt; GET https://reqres.in/api/
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: reqres.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_241)
 
-02:09:27.190 response time in milliseconds: 300.14
+17:18:51.138 response time in milliseconds: 839.44
 1 &lt; 404
 1 &lt; Access-Control-Allow-Origin: *
-1 &lt; CF-Cache-Status: EXPIRED
-1 &lt; CF-RAY: 5bfce7b44d4a06d5-LHR
+1 &lt; Age: 32
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 5c231154ea43fd11-OTP
 1 &lt; Cache-Control: max-age=14400
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: text/html; charset=utf-8
-1 &lt; Date: Sat, 08 Aug 2020 23:09:27 GMT
+1 &lt; Date: Thu, 13 Aug 2020 14:18:51 GMT
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=ded0c4d457bad189b7593146a6a52bf601596928167; expires=Mon, 07-Sep-20 23:09:27 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Set-Cookie: __cfduid=d05d1fdc5a8ac87290804fa54722563de1597328331; expires=Sat, 12-Sep-20 14:18:51 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Accept-Encoding
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 0471ef24ac000006d513a8e200000001
+1 &lt; cf-request-id: 0489c929150000fd1139010200000001
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
   &lt;head&gt;
@@ -342,16 +343,16 @@
 &lt;/html&gt;
 
 
-02:09:27.206 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 38; The reference to entity "l" must end with the ';' delimiter.</div>
+17:18:51.194 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 38; The reference to entity "l" must end with the ';' delimiter.</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 404</div>
-<div class="time-cell passed">0.000016</div>
+<div class="time-cell passed">0.000019</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Then print response</div>
-<div class="time-cell passed">0.000439</div>
+<div class="time-cell passed">0.000259</div>
 </div>
-<div class="preformatted">02:09:27.207 [print] &lt;!DOCTYPE html&gt;
+<div class="preformatted">17:18:51.194 [print] &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
   &lt;head&gt;
     &lt;!-- Google Tag Manager --&gt;
@@ -488,6 +489,287 @@
     &lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;</div>
+<div class="step-row">
+<div class="step-cell failed">And match response ==</div>
+<div class="time-cell failed">0.127325</div>
+</div>
+<div class="preformatted">{}
+17:18:51.322 assertion failed: path: $, actual: '&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;!-- Google Tag Manager --&gt;
+    &lt;script&gt;
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&amp;l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KB622KF");
+    &lt;/script&gt;
+    &lt;!-- End Google Tag Manager --&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    /&gt;
+    &lt;meta
+      name="description"
+      content="A hosted REST-API ready to respond to your AJAX requests"
+    /&gt;
+    &lt;title&gt;
+      Reqres - A hosted REST-API ready to respond to your AJAX requests
+    &lt;/title&gt;
+    &lt;link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    /&gt;
+
+    &lt;link rel="stylesheet" href="/css/app.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="header-content"&gt;
+      &lt;header class="main-header"&gt;
+        &lt;section class="wrap"&gt;
+          &lt;h1 class="logo"&gt;&lt;a href="/"&gt;Req&amp;#8201;|&amp;#8201;Res&lt;/a&gt;&lt;/h1&gt;
+        &lt;/section&gt;
+      &lt;/header&gt;
+      &lt;main class="the-sell"&gt;
+        &lt;div class="wrap"&gt;
+          &lt;h2 class="tagline"&gt;Test your front-end against a real API&lt;/h2&gt;
+          &lt;section class="key-sells"&gt;
+            &lt;div class="sell"&gt;
+              &lt;div class="v-center"&gt;
+                &lt;h3&gt;Fake data&lt;/h3&gt;
+                &lt;p&gt;
+                  No more tedious sample data creation, we've got it covered.
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;i class="fa fa-cloud-download"&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class="sell"&gt;
+              &lt;div class="v-center"&gt;
+                &lt;h3&gt;Real responses&lt;/h3&gt;
+                &lt;p&gt;
+                  Develop with real response codes. GET, POST, PUT &amp;amp; DELETE
+                  supported.
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;i class="fa fa-code"&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class="sell"&gt;
+              &lt;div class="v-center"&gt;
+                &lt;h3&gt;Always-on&lt;/h3&gt;
+                &lt;p&gt;
+                  24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access in your development
+                  phases. Go nuts.
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;i class="fa fa-toggle-on"&gt;&lt;/i&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+          &lt;h2 class="tagline"&gt;
+            A hosted REST-API ready to respond to your AJAX requests.
+          &lt;/h2&gt;
+          &lt;div class="t-center main-arrow"&gt;
+            &lt;i class="fa fa-arrow-circle-down"&gt;&lt;/i&gt;
+          &lt;/div&gt;
+          &lt;script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin" id="_carbonads_js"&gt;&lt;/script&gt;
+        &lt;/div&gt;
+      &lt;/main&gt;
+    &lt;/div&gt;
+    &lt;div class="container"&gt;
+      404
+    &lt;/div&gt;
+    &lt;footer&gt;
+      &lt;div class="wrap"&gt;
+        &lt;hr class="dark" /&gt;
+        &lt;p class="t-center"&gt;
+          Made for developers and designers by
+          &lt;a href="http://benhowdle.im"&gt;Ben Howdle&lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"&gt;&lt;/script&gt;
+    &lt;script src="/js/app.js"&gt;&lt;/script&gt;
+    &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+    &lt;script async src="https://www.googletagmanager.com/gtag/js?id=UA-174008107-1"&gt;
+    &lt;/script&gt;
+    &lt;script&gt;
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-174008107-1');
+    &lt;/script&gt;
+    &lt;script&gt;
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-55888877-1", "auto");
+      ga("send", "pageview");
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+', expected: '{}', reason: not equal
+QUESTION_1.feature:11 - path: $, actual: '&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;!-- Google Tag Manager --&gt;
+    &lt;script&gt;
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&amp;l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KB622KF");
+    &lt;/script&gt;
+    &lt;!-- End Google Tag Manager --&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    /&gt;
+    &lt;meta
+      name="description"
+      content="A hosted REST-API ready to respond to your AJAX requests"
+    /&gt;
+    &lt;title&gt;
+      Reqres - A hosted REST-API ready to respond to your AJAX requests
+    &lt;/title&gt;
+    &lt;link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    /&gt;
+
+    &lt;link rel="stylesheet" href="/css/app.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="header-content"&gt;
+      &lt;header class="main-header"&gt;
+        &lt;section class="wrap"&gt;
+          &lt;h1 class="logo"&gt;&lt;a href="/"&gt;Req&amp;#8201;|&amp;#8201;Res&lt;/a&gt;&lt;/h1&gt;
+        &lt;/section&gt;
+      &lt;/header&gt;
+      &lt;main class="the-sell"&gt;
+        &lt;div class="wrap"&gt;
+          &lt;h2 class="tagline"&gt;Test your front-end against a real API&lt;/h2&gt;
+          &lt;section class="key-sells"&gt;
+            &lt;div class="sell"&gt;
+              &lt;div class="v-center"&gt;
+                &lt;h3&gt;Fake data&lt;/h3&gt;
+                &lt;p&gt;
+                  No more tedious sample data creation, we've got it covered.
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;i class="fa fa-cloud-download"&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class="sell"&gt;
+              &lt;div class="v-center"&gt;
+                &lt;h3&gt;Real responses&lt;/h3&gt;
+                &lt;p&gt;
+                  Develop with real response codes. GET, POST, PUT &amp;amp; DELETE
+                  supported.
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;i class="fa fa-code"&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class="sell"&gt;
+              &lt;div class="v-center"&gt;
+                &lt;h3&gt;Always-on&lt;/h3&gt;
+                &lt;p&gt;
+                  24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access in your development
+                  phases. Go nuts.
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;i class="fa fa-toggle-on"&gt;&lt;/i&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+          &lt;h2 class="tagline"&gt;
+            A hosted REST-API ready to respond to your AJAX requests.
+          &lt;/h2&gt;
+          &lt;div class="t-center main-arrow"&gt;
+            &lt;i class="fa fa-arrow-circle-down"&gt;&lt;/i&gt;
+          &lt;/div&gt;
+          &lt;script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin" id="_carbonads_js"&gt;&lt;/script&gt;
+        &lt;/div&gt;
+      &lt;/main&gt;
+    &lt;/div&gt;
+    &lt;div class="container"&gt;
+      404
+    &lt;/div&gt;
+    &lt;footer&gt;
+      &lt;div class="wrap"&gt;
+        &lt;hr class="dark" /&gt;
+        &lt;p class="t-center"&gt;
+          Made for developers and designers by
+          &lt;a href="http://benhowdle.im"&gt;Ben Howdle&lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"&gt;&lt;/script&gt;
+    &lt;script src="/js/app.js"&gt;&lt;/script&gt;
+    &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+    &lt;script async src="https://www.googletagmanager.com/gtag/js?id=UA-174008107-1"&gt;
+    &lt;/script&gt;
+    &lt;script&gt;
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-174008107-1');
+    &lt;/script&gt;
+    &lt;script&gt;
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-55888877-1", "auto");
+      ga("send", "pageview");
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+', expected: '{}', reason: not equal</div>
 </div>
 </div>
 </body>
